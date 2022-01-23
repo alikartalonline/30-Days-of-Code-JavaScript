@@ -80,5 +80,44 @@ function main() {
 
 
 
+// *************  Day 3: Intro to Conditional Statements  ************* 
+
+
+function main() {
+    const N = parseInt(readLine().trim(), 10);
+ /*
+  function oddoreven(str) {
+ 
+  if (str % 2 == 0){
+    console.log("it is even")
+  } else if (str % 2 != 0)
+    console.log("it is odd")
+  }  
+  oddoreven(2); // it is even
+  oddoreven(3); // it is odd
+*/
+  
+    if (N % 2 != 0) {
+        console.log("Weird")
+    } 
+    else if (N % 2 == 0 && (N >= 2 && N <= 5)) {
+        console.log("Not Weird") 
+    }
+    else if (N % 2 == 0 && (N >= 6 && N <= 20)) {
+        console.log("Weird") 
+    }
+    else if (N % 2 == 0 && (N > 20)) {
+        console.log("Not Weird") 
+    }
+      
+    
+}
+
+
+
+
+
+
+
 
 
