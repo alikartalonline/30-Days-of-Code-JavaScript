@@ -163,10 +163,41 @@ function main() {
 
 
 
+// *************  Day 6: Let's Review  ************* 
 
+function processData(input) {
+    //Enter your code here
+    // input: "2\nHacker\nRank"
 
-
-
+    let arr = input.split("\n") // arr  böyle gözükecek ["2", "Hacker", "Rank"]
+    
+    // Çift ve Tek dizilerimizin çıktısını almak için 'even' ve 'odd' oluşturdum
+    let even = "";
+    let odd = "";
+    
+// let i = 1'e ayarlanmıştır çünkü bu problem için “2” olan dizideki ilk girişe (0) erişmek istemiyoruz.
+// Yalnızca "Hacker Rank" metni için çıktı istediler.
+    for (let i = 1; i < arr.length; i++){
+        for (let x = 0; x < arr[i].length; x++){
+            // “Hacker” ve "Rank" karakterlerini sayarken, bunların çift mi yoksa tek mi olduğunu kontrol etmeliyiz ve ona göre de "even" ya da "odd"a ekleyeceğiz
+            if ( x % 2 == 0){ 
+            // Belirli dizi öğesinden bir seferde  bir harf ekliyoruz. 
+               even += arr[i][x];
+            // Örneğin, ilk çalıştırmada, "Hacker" -> arr[1][0] -> "H" ve  0 % 2 == 0 yani even.
+            // 0-2-4 = H-c-r = even = Hcr
+            } else odd += arr[i][x];
+            // "Hacker" -> arr[1][1] -> "a" ve  1 % 2 == 1 yani odd.
+            // 1-3-5 = a-k-r = odd = akr
+        } 
+        console.log(even + " " + odd);
+        even = "";
+        odd = "";
+        
+    }
+    // yazım hataları ve sayılar arasında boğuştuktan
+    // ve iki kahve içtikten sonra çözüldü!
+    // biraz da sinirlendirdi bu problem beni, ayrıca sunuş da aynı şekilde...
+} 
 
 
 
