@@ -7,6 +7,7 @@ function processData(inputString) {
     console.log("Hello, World.");
     
     // Write the second line of output that prints the contents of 'inputString' here.
+    console.log(inputString);
 }
 
 
@@ -143,6 +144,47 @@ function Person(initialAge){
           age += 1;
    };
 }
+
+
+
+
+// *************  Day 5: Loops  ************* 
+
+function main() {
+    const n = parseInt(readLine().trim(), 10);
+
+   for (let i = 1; i <= 10; i++){
+
+        let result = n * i;
+     // console.log(`${n} x ${i} =  ${result}`) --> Sorry, my bad :)
+        console.log(`${n} x ${i} = ` + result)
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
